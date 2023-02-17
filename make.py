@@ -56,4 +56,4 @@ for _ in os.listdir('./'+base):
     _ = unicodedata.ucd_3_2_0.normalize('NFC', _).encode('utf-8').decode()
     # break
     if ('.png' in _)or ('.jpg' in _) or ('.webp' in _) :
-        print(data.replace('%category%', 'sh').replace('%image%', quote(base+'/'+_)).replace('%name%', _.split('.')[0]))
+        print(data.replace('%category%', 'bc').replace('%image%', quote(base+'/'+_)).replace('%name%', _.split('.')[0]))
